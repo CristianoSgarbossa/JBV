@@ -1,0 +1,25 @@
+/* Header */
+@import "/css/header/header.css";
+@import "/css/header/header-pg.css";
+
+/* Introducao */
+@import "/css/introducao/introducao.css";
+
+/* Servicos */
+@import "/css/servicos/servico.css";
+@import "/css/servicos/terrenos.css";
+
+/* Duvidas */
+@import "/css/duvidas/duvidas.css";
+
+/* Contato */
+@import "/css/contato/contato.css";
+
+/* Localizacao */
+@import "/css/localizacao/localizacao.css";
+
+/* Rodape */
+@import "/css/rodape/";
+
+/* Global */
+@import "/css/global/global.css";
