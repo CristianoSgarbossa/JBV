@@ -1,64 +1,54 @@
-#index .introducao-bg {
-  background: #2a6041;
-  color: #fff;
-  box-shadow: inset 0px -120px #ffffff;
-}
-
-.introducao {
+#donabrida .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
+  padding-top: 100px;
 }
 
-.introducao-conteudo {
+#donabrida .introducao-conteudo {
   align-self: end;
   padding-bottom: 200px;
 }
 
-.introducao img {
+#donabrida .introducao img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
 
-.introducao h1 {
+#donabrida .introducao h1 {
   margin-bottom: 32px;
   font-family: "Playfair Display";
   font-size: 48px;
 }
 
-.introducao p {
+#donabrida .introducao p {
   margin-bottom: 32px;
-  color: #ffffff;
+  color: #000000;
   font-family: "Open Sans";
 }
 
-.introducao span {
+#donabrida .introducao span {
   color: #8fcb9b;
 }
 
 @media (max-width: 800px) {
-  #index .introducao-bg {
-    background: #2a6041;
-    padding-top: 40px;
-    box-shadow: inset 0px -60px #fff;
-  }
-  .introducao {
+  #donabrida .introducao {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  .introducao-conteudo {
+  #donabrida .introducao-conteudo {
     padding-bottom: 0px;
   }
 
-  .introducao h1 {
+  #donabrida .introducao h1 {
     font-size: 32px;
     margin-bottom: 16px;
   }
 
-  .introducao img {
+  #donabrida .introducao img {
     height: 300px;
     width: 100%;
   }
