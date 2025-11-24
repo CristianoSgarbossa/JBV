@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body id="donabrida">
+<body id="donabrida" class="js">
   <header class="header-bg">
     <div class="header container">
       <a href="./">
@@ -34,7 +34,7 @@
   <main id="introducao" class="introducao-bg">
     <div class="introducao container">
       <div>
-        <img src="./img/1000066590_edited.jpeg" alt="Terreno">
+        <img src="./img/condominio-donabrida.JPG" alt="Terreno">
       </div>
       <div class="introducao-conteudo">
         <h1>Loteamento Dona Brida<span>.<span></h1>
@@ -48,58 +48,49 @@
     </div>
   </main>
 
-  <article id="servicos" class="servicos-lista container">
-    <h2>nossos terrenos<span>.<span>
-    </h2>
-    <ul>
+  <article id="servicos" class="terreno-section terreno-lista-dn container">
+    <div class="terreno-lista">
+      <h2>nossos terrenos<span>.</span></h2>
+    </div>
 
-      <li>
-        <a href="./loteamneto.html">
-          <img src="./img/1000066590_edited.jpeg" alt="Condominio">
-          <h3>Loteamento Dona Brida</h3>
-        </a>
+    <button class="seta left">❮</button>
+    <ul class="terreno-slider">
+      <li><img src=" ./img/terreno-dnbrida.jpeg" alt="Condominio">
       </li>
-
-      <li>
-        <a href="./condominio.html">
-          <img src="./img/10.png" alt="Loteamento">
-          <h3>Condomínio Vila Flora</h3>
-        </a>
-      </li>
+      <li><img src="./img/terreno-cond.jpeg" alt="Loteamento"></li>
+      <li><img src="./img/obra-cond.JPG" alt="Loteamento"></li>
+      <li><img src="./img/obra-cond1.JPG" alt="Loteamento"></li>
     </ul>
+    <button class="seta right">❯</button>
+
+    <div class="terreno-bt">
+      <a href="https://wa.me/5545999999999?text=Fiquei%20interessado%20em%20um%20terreno%20no%20Loteamento%20Dona%20Brida." target="_blank">Entre em Contato</a>
+    </div>
   </article>
 
-  <article id="duvidas" class="duvidas container">
-    <h2>dúvidas frequentes<span>.</span></h2>
+  <article id="duvidas" class="perguntas container">
+    <h2>perguntas frequentes<span>.</span></h2>
+
     <dl>
       <div>
-        <dt>Qual forma de pagamento vocês aceitam?</dt>
-        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="ativa">Aceitamos pagamentos via Boleto Bancário ou dinheiro físico, temos um sistema on-line onde são rastreados e atualizados automaticamente os boletos de cada cliente.</dd>
       </div>
-
       <div>
-        <dt>Como posso entrar em contato?</dt>
-        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="">Nossos meios de comunicação são WhatsApp, Instagram, Ligação Telefônica, E-mails, e pessoalmente em nosso escritório.</dd>
       </div>
-
       <div>
-        <dt>Vocês possuem algum desconto?</dt>
-        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="">Temos desconto de 5% para vendas feitas à vista.</dd>
       </div>
-
       <div>
-        <dt>Qual a garantia que possuo?</dt>
-        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4" class="">A compra é garantida por meio de contrato de compra e venda, escritura, e registro do imóvel, então a compra é totalmente segura e protegida por lei.</dd>
       </div>
-
       <div>
-        <dt>Posso parcelar no boleto?</dt>
-        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
-
-      <div>
-        <dt>Quantas trocas posso fazer ao ano?</dt>
-        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="">Sim, os lotes podem ser parcelados em até 190x nas condições atuais, via boleto bancário.</dd>
       </div>
     </dl>
   </article>
@@ -112,19 +103,15 @@
 
         <h3>Contato</h3>
         <ul>
-          <li><a href="tel:+55219999999">+55 21 9999-9999</a></li>
-          <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
-          <li>Rua Ali Perto, 42 - Botafogo</li>
-          <li>Rio de Janeiro - RJ</li>
+          <li><a href="tel:+55219999999">+55 45 98401-5226</a></li>
+          <li><a href="mailto:contato@bikcraft.com">jardimdonabrida@hotmail.com</a></li>
+          <li>BR-277, Km 723 - nº 8400</li>
+          <li>Parque Três Fronteiras - Foz do Iguaçu - PR</li>
         </ul>
 
         <div class="footer-redes">
-          <a href="./">
+          <a href="https://www.instagram.com/jbv.imoveis/">
             <img src="./img/instagram.svg" alt="instagram">
-          </a>
-
-          <a href="./">
-            <img src="./img/facebook.svg" alt="Facebook">
           </a>
         </div>
       </div>
@@ -133,8 +120,8 @@
         <h3>Informações</h3>
         <nav>
           <ul>
-            <li><a href="./bicicletas.html">LOTEAMENTO DONA BRIDA</a></li>
-            <li><a href="./seguros.html">CONDOMINIO VILA FLORA</a></li>
+            <li><a href="./index.html">JBV LOTEADORA</a></li>
+            <li><a href="./condominio.html">CONDOMINIO VILA FLORA</a></li>
             <li><a href="./termos.html">Termos e Condições</a></li>
           </ul>
         </nav>
@@ -142,5 +129,8 @@
       <p>Jbv © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
+</body>
 
 </html>

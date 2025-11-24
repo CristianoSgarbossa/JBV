@@ -1,0 +1,35 @@
+.termos {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.termos h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Playfair Display";
+  font-size: 30px;
+}
+
+.termos p + h2 {
+  margin-top: 40px;
+}
+
+.termos p {
+  max-width: 75ch;
+  margin-bottom: 24px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #111;
+}
+
+.titulo-ter h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+  font-size: 48px;
+  color: #000;
+}
+
+.titulo-ter span {
+  color: #8fcb9b;
+}

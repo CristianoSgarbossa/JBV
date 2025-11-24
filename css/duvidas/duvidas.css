@@ -1,35 +1,39 @@
-.duvidas {
+.perguntas {
   padding-top: 0px;
   padding-bottom: 120px;
 }
 
-.duvidas h2 {
+.perguntas h2 {
   margin-bottom: 40px;
   font-family: "Playfair Display";
   font-size: 48px;
 }
 
-.duvidas span {
+.perguntas span {
   color: #8fcb9b;
 }
 
-.duvidas dl > div {
+.perguntas dl > div {
   padding-top: 20px;
   border-radius: 4px;
 }
 
-.duvidas dt {
+.perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+  text-align: left;
 }
 
-.duvidas dt::before {
+.perguntas button::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -37,7 +41,7 @@
   background-color: #8fcb9b;
 }
 
-.duvidas dt::after {
+.perguntas button::after {
   content: "";
   display: inline-block;
   width: 14px;
@@ -46,11 +50,20 @@
   transition: 0.3s;
 }
 
-.duvidas dt:hover::after {
+.perguntas button:active::after,
+.perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
-.duvidas dd {
+.js .perguntas dd {
+  display: none;
+}
+
+.js .perguntas dd.ativa {
+  display: block;
+}
+
+.perguntas dd {
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
@@ -59,12 +72,12 @@
 }
 
 @media (max-width: 800px) {
-  .duvidas {
+  .perguntas {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .duvidas h2 {
+  .perguntas h2 {
     margin-bottom: 40px;
     font-size: 32px;
   }

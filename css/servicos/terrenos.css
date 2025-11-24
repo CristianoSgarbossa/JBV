@@ -1,19 +1,62 @@
-#donabrida .servicos-lista {
-  padding-top: 60px;
+.terreno-section {
+  position: relative;
+  margin: 0 auto;
+}
+
+.terreno-slider {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 30px;
+  width: 80%;
+}
+
+.terreno-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.terreno-slider li {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+}
+
+.terreno-slider img {
+  height: 300px;
+  width: 500px;
+  display: block;
+  border-radius: 4px;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 80px;
+  cursor: pointer;
+  color: #999;
+  transition: 0.2s;
+}
+
+.seta:hover {
+  color: #000;
+}
+
+.seta.left {
+  left: 20px;
+}
+
+.seta.right {
+  right: 20px;
+}
+
+.terreno-lista-dn {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
-
-#donabrida .servicos-lista h2 {
-  margin-bottom: 40px;
-  font-size: 48px;
-  font-family: "Playfair Display";
-}
-
-#donabrida .servicos-lista span {
-  color: #8fcb9b;
-}
-
-#donabrida .servicos-lista ul {
+.terreno-lista-dn ul {
   display: flex;
   gap: 40px;
   max-width: 1200px;
@@ -23,71 +66,126 @@
   overflow-x: auto;
 }
 
-#donabrida .servicos-lista li {
-  flex: 1;
-  min-width: 280px;
+.terreno-lista h2 {
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-family: "Playfair Display";
 }
 
-#donabrida .servicos-lista a {
-  display: block;
+.terreno-lista span {
+  color: #8fcb9b;
+}
+
+.terreno-bt {
+  display: flex;
+  justify-content: center;
+}
+
+.terreno-bt a {
   font-size: 20px;
   font-family: "Open Sans";
-  font-weight: regular;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #000000;
-}
-
-#donabrida .servicos-lista img {
-  margin-bottom: 16px;
-  height: 400px;
+  margin-top: 20px;
+  background: linear-gradient(180deg, #47654d 0%, #8fcb9b 100%);
+  padding: 12px 24px;
   border-radius: 4px;
-}
-
-#condominio .servicos-lista img {
-  margin-bottom: 16px;
-  height: 400px;
-  border-radius: 4px;
-}
-
-#donabrida .servicos-lista h3 {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  font-size: "Open Sans";
-  font-size: 20px;
-}
-
-#donabrida .servicos-lista h3::before {
-  content: "";
   display: inline-block;
-  background-color: #8fcb9b;
-  height: 8px;
-  width: 12px;
-  margin-right: 8px;
-  transition: width 0.2s;
+  text-align: center;
+  transition: 0.3s ease;
 }
 
-#donabrida .servicos-lista a:hover h3::before {
-  width: 24px;
+.terreno-bt a:hover {
+  background: linear-gradient(
+    180deg,
+    #3b5440 0%,
+    #75b789 100%
+  ); /* mais escuro */
+}
+
+.terreno-lista-cd {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.terreno-lista-cd ul {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 0px 20px 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
 }
 
 @media (max-width: 800px) {
-  #donabrida .servicos-lista {
+  .terreno-lista-dn,
+  .terreno-lista-cd {
     padding-bottom: 60px;
+    padding-top: 60px;
   }
 
-  #donabrida .servicos-lista ul {
+  .terreno-lista-dn ul,
+  .terreno-lista-cd ul {
     gap: 20px;
   }
 
-  #donabrida .servicos-lista img {
+  .terreno-lista-dn img,
+  .terreno-lista-cd img {
     height: 300px;
   }
 
-  #donabrida .servicos-lista h2 {
+  .terreno-lista h2 {
     font-size: 32px;
   }
 
-  #donabrida .servicos-lista h3 {
+  .terreno-lista h3 {
     font-size: 16px;
+  }
+
+  .terreno-slider {
+    gap: 0 !important;
+    padding: 0 0 0 20px !important;
+  }
+
+  .terreno-slider li {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-right: 20px;
+  }
+
+  .terreno-slider img {
+    height: 240px !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  .seta {
+    font-size: 45px !important;
+    top: 50% !important;
+  }
+
+  .seta.left {
+    left: 0px !important;
+  }
+
+  .seta.right {
+    right: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .terreno-slider li {
+    flex: 0 0 90% !important;
+    max-width: 90% !important;
+  }
+
+  .terreno-slider img {
+    height: 200px !important;
+  }
+
+  .seta {
+    font-size: 36px !important;
   }
 }
